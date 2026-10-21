@@ -5,52 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Club Events</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-
         <h1>Club Events</h1>
         <nav>
             <a href="#events">Events</a>
             <a href="#signup">Sign Up</a>
         </nav>
     </header>
-    
+
     <main>
         <section id="events">
             <h2>Upcoming Club Events</h2>
-
             <div class="cards">
                 <article>
                     <h3>Web Development Workshop</h3>
                     <p>Learn the basics of building websites with HTML and CSS.</p>
                     <p>Date: November 5</p>
                 </article>
-
                 <article>
                     <h3>Networking Night</h3>
                     <p>Meet fellow students and make new connections.</p>
                     <p>Date: November 8</p>
                 </article>
-
                 <article>
                     <h3>Design Thinking Session</h3>
                     <p>Explore creative ways to solve everyday problems.</p>
                     <p>Date: November 12</p>
                 </article>
-
                 <article>
                     <h3>Guest Speaker Event</h3>
                     <p>Hear from a professional working in the technology industry.</p>
                     <p>Date: November 15</p>
                 </article>
-
                 <article>
                     <h3>Team Project Meetup</h3>
                     <p>Find teammates and share ideas for your next project.</p>
                     <p>Date: November 19</p>
                 </article>
-
                 <article>
                     <h3>End-of-Month Social</h3>
                     <p>Relax, socialize, and celebrate with the club.</p>
@@ -58,7 +52,35 @@
                 </article>
             </div>
         </section>
+
+        <section id="signup">
+            <h2>Sign Up for an Event</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="event">Choose an Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Select an event</option>
+                    <option value="web-development">Web Development Workshop</option>
+                    <option value="networking">Networking Night</option>
+                    <option value="design-thinking">Design Thinking Session</option>
+                    <option value="guest-speaker">Guest Speaker Event</option>
+                    <option value="team-project">Team Project Meetup</option>
+                    <option value="social">End-of-Month Social</option>
+                </select>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
     </main>
 
+    <footer>
+        <p>&copy; 2026 Club Events. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
