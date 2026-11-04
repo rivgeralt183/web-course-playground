@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+
+  <style>
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Tasks</h1>
+
+  <form id="task-form">
+    <label for="task-input">New task</label>
+    <input id="task-input">
+    <button type="submit">Add</button>
+  </form>
+
+  <p id="error"></p>
+  <ul id="task-list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
